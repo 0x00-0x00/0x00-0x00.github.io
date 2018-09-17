@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DLL Reversing - Writeup"
-date:   2018-09-11 08:45:01 -0700
+date:   2018-09-17 08:45:01 -0700
 categories: writeup
 ---
 
