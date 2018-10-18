@@ -412,6 +412,6 @@ if (!ret)
 
 As CreateProcessWithTokenW executes succesfully, a windows shell under NT AUTHORITY\SYSTEM should appear on your screen.
 
-![Screenshot](/assets/windows_api-01.JPG)
+![Screenshot](/assets/windows_api-01.jpg)
 
 This concludes the first part of this blog post. In the second part I intend to show how to use Impersonation tokens to get SYSTEM shell.
