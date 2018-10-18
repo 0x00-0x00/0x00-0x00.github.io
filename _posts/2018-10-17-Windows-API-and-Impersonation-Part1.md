@@ -8,7 +8,7 @@ categories: research
 
 # Introduction
 
-This is my blog post for study notes about Windows API and Impesonation. It is going to describe my journey into self-learnig about how Windows API and Impersonation works and also as a tutorial for people who want to know more about it but do not have a programming skills  good enough to walk by yourself through all the Microsoft Documentation pages to get stuff 
+This is my blog post for study notes about Windows API and Impersonation. It is going to describe my journey into self-learning about how Windows API and Impersonation works and also as a tutorial for people who want to know more about it but do not have a programming skills  good enough to walk by yourself through all the Microsoft Documentation pages to get stuff 
 done.
 
 The main objective is to "get system" from Local Administrator account. After reading this post completely, I guarantee you have enough resources to do it by yourself using your own code!
