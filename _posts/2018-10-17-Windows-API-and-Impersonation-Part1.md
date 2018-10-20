@@ -341,29 +341,6 @@ int wmain(int argc, WCHAR **argv)
 
 It is a lot of code. But in summary, this code uses a function named GetAccessToken to retrieve a handle for a remote process, given a DWORD as input that represents a process PID number. If successful, it duplicates the token retrieved, so we can use it to impersonate the token owner identity later.
 
-## ImpersonateLoggedOnUser
-Another very important function that is crucial to impersonate identities in Windows systems. It is needed to call this function in our program as it will allow our program thread to impersonate the security context of any logged-on user (as well service accounts) using a token handle. Which we got using DuplicateTokenEx, for example.
-
-So, after we have a spare Token handle, by using DuplicateTokenEx, we are able to call this function, as explained in the documentation:
-```c++
-BOOL ImpersonateLoggedOnUser(
-  HANDLE hToken
-);
-```
-
-Using the code from DuplicateTokenEx() topic, we can now impersonate the token:
-```c++
-if(!DuplicateTokenEx(pToken, MAXIMUM_ALLOWED, NULL, seImpersonateLevel, tokenType, &pNewToken))
-	{
-		DWORD LastError = GetLastError();
-		wprintf(L"ERROR: Could not duplicate process token [%d]\n", LastError);
-		return 1;
-	}
-	wprintf(L"Process token has been duplicated.\n");
-
-ImpersonateLoggedOnUser(pNewToken);
-// Below this line we are allowed to call functions as SYSTEM in this thread.
-```
 
 ## CreateProcessWithToken
 CreateProcessWithToken is the last function we are going to call before raising ourselves to SYSTEM user. After ImpersonateLoggedOnUser is called (and not returning errors), we are able to use our Duplicated token to spawn a process under a new security context.
@@ -381,8 +358,6 @@ BOOL CreateProcessWithTokenW(
   LPPROCESS_INFORMATION lpProcessInformation
 );
 ```
-
-
 Continuing our code from "ImpersonateLoggedOnUser":
 ```c++
 if(!DuplicateTokenEx(pToken, MAXIMUM_ALLOWED, NULL, seImpersonateLevel, tokenType, &pNewToken))
@@ -392,9 +367,6 @@ if(!DuplicateTokenEx(pToken, MAXIMUM_ALLOWED, NULL, seImpersonateLevel, tokenTyp
 		return 1;
 	}
 	wprintf(L"Process token has been duplicated.\n");
-
-ImpersonateLoggedOnUser(pNewToken);
-// Now we are alowed to call functions as SYSTEM in this thread.
 
 /* Starts a new process with SYSTEM token */
 STARTUPINFO si = {};
