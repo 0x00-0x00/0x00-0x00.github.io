@@ -314,7 +314,7 @@ SYSTEM user is the most powerful user available in Windows systems. It is intere
 
 With our DLL injected in-memory, we can grab "WinLogon.exe" token (Which is a process owned by SYSTEM and is not a "protected" process) to duplicate it and impersonate it to our current PowerShell thread.
 
-![Screenshot](/assets/windows_api-03.jpg)
+![Screenshot](/assets/windows_api-03.JPG)
 
 Boom! We are system.
 
@@ -328,7 +328,7 @@ If you want to enable a privilege using our DLL, you can use `[zc00l.Impersonati
 
 It is possible to see that "SeIncreaseQuotaPrivilege" is DISABLED. To enable it, just type: `[zc00l.ImpersonationToken]::EnablePrivilege("SeIncreaseQuotaPrivilege")`
 
-![Screenshot](/assets/windows_api-04.jpg)
+![Screenshot](/assets/windows_api-04.JPG)
 
 It is now enabled. Everything is possible for SYSTEM!
 
