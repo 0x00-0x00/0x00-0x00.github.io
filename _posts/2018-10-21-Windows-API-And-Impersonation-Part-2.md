@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows API and Impersonation Part 2 - How to get SYSTEM using Impersonation Tokens"
-date:   2018-09-21 17:53:01 -0300
+date:   2018-10-21 17:53:01 -0300
 categories: research
 ---
 

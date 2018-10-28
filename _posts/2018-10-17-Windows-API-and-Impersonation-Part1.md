@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows API and Impersonation Part 1 - How to get SYSTEM using Primary Tokens"
-date:   2018-09-17 11:53:01 -0700
+date:   2018-10-17 11:53:01 -0700
 categories: research
 ---
 
