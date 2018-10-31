@@ -152,7 +152,7 @@ Name it "Source.cs".
 To compile it, use the following syntax, in a PowerShell shell that is in the same directory as this source.
 
 ```powershell
-Add-Type [IO.File]::ReadAllText("$pwd\Source.cs") -ReferencedAssemblies "System.Windows.Forms" -OutputAssembly "CMSTP-UAC-Bypass.dll"
+Add-Type -TypeDefinition ([IO.File]::ReadAllText("$pwd\Source.cs")) -ReferencedAssemblies "System.Windows.Forms" -OutputAssembly "CMSTP-UAC-Bypass.dll"
 ```
 
 Now you have this "dll" with our C# code.
