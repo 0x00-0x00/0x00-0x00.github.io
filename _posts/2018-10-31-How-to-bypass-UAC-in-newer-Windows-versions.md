@@ -170,7 +170,7 @@ PS C:\> [CMSTPBypass]::Execute("C:\Windows\System32\cmd.exe")
 
 And a high-integrity cmd.exe should pop up in your screen!
 
-![Screenshot](/assets/UAC_03.JPG)
+![Screenshot](/assets/UAC_03.jpg)
 
 As you can see, we have gone from a non-UAC process and spawned a Administrator process!
 
