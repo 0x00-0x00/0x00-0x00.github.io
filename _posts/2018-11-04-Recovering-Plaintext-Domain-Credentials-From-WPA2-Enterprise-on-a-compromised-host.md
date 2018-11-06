@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Recovering Plaintext Domain Credentials from WPA2 Enterprise on a Compromised Host"
-date:   2018-10-28 17:53:01 -0300
+date:   2018-11-06 17:53:01 -0300
 categories: research
 ---
 
