@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oh No! AMSI blocked the AMSI Bypass! What now?"
-date:   2018-10-31 16:01:00 -0300
+date:   2018-11-09 16:01:00 -0300
 categories: research
 ---
 
