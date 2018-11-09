@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oh No! AMSI blocked the AMSI Bypass! What now?"
-date:   2018-11-09 16:01:00 -0300
+date:   2018-11-09 00:30:00 -0300
 categories: research
 ---
 
@@ -11,7 +11,7 @@ Hello readers. Today I was going to use my AMSI bypass and have got the followin
 
 ![Screenshot](/assets/bypass_01.JPG)
 
-Nice. It got blocked. This is very understandable since I posted the PoC script in my blog. But this is not important, the important thing is: How we can bypass it, again?
+Nice. It got blocked. This is very understandable since I posted the PoC script in my blog. But this is not important, the important thing is: How can we bypass it, again?
 
 # Bypass the Block
 
@@ -55,6 +55,8 @@ Execute it and we are legit again!
 # Conclusion
 
 AMSI might be smart, but attackers are unpredictable. This war will never be over.
+
+Now you are able to modify your own script, so you will have no worries if this new one gets blocked too.
 
 Best regards,
 
