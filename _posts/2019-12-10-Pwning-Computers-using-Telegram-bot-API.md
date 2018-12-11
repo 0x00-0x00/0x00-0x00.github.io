@@ -52,30 +52,30 @@ To execute a command, simply type `/bot:BOT_ID /shell PowerShellCommandHere`
     
 PS: Dont worry about output size. The bot will send 200 lines once a second, so every output is sent to you!
 
-![Screenshot](/assets/telepreter_009.JPG)
+![Screenshot](/assets/telepreter_009.jpg)
 
 ## How to download files
 
 To download a file, simply type `/bot:BOT_ID /download C:\windows\system32\license.rtf` and Bot will send this file in group using Telegram file upload API!
 
-![Screenshot](/assets/telepreter_010.JPG)
+![Screenshot](/assets/telepreter_010.jpg)
 
 ## How to Port Scan with it!
 
 It is also useful for Recon, too! There is a sightly modified version of Invoke-Portscan from Nishang pack. No need to do fancy pivoting tricks to scan the internal network!
 
-![Screenshot](/assets/telepreter_011.JPG)
+![Screenshot](/assets/telepreter_011.jpg)
 
 
 ## How to bypass UAC with it!
 
 Check how I bypassed UAC in a Lab computer that was infected with it!
 
-![Screenshot](/assets/telepreter_007.JPG)
+![Screenshot](/assets/telepreter_007.jpg)
 
 In the above picture, I created a .bat stager that resided in the user temporary folder. This tiny stager will fetch the DLL using the supplied URL and then use reflection to load all dependencies and start the main function of the bot.
 
-![Screenshot](/assets/telepreter_008.JPG)
+![Screenshot](/assets/telepreter_008.jpg)
 
 Looking the picture above, it is possible to observe that a new instance of a bot has started. And the `Administrator` flag is set to True, which means this is an elevated session and we can use post-exploitation tools like Invoke-Mimikatz or others that require elevated privileges to work. To avoid having problems with multiple instances, never stay with more than one active session.
 
@@ -92,7 +92,7 @@ To get access to the source-code: [Link](https://github.com/0x00-0x00/Telepreter
 
 Just replace the following values in the code:
 
-![Screenshot](/assets/telepreter_012.JPG)
+![Screenshot](/assets/telepreter_012.jpg)
 
 
 Have fun.
