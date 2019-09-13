@@ -11,7 +11,7 @@ This article will depict a technique that could be used by a penetration tester 
 
 Stealthly because of two reasons:
 
-1. It does not trigger Windows Firewall upon binding a new TCP socket.
+1. It does not trigger Windows Firewall upon binding a new TCP socket because it doesn't bind any socket at all!
 2. It uses named pipe as data transport, so not so much abnormality of traffic will be generated from this.
 
 
@@ -223,7 +223,7 @@ namespace Client
 Don't bother copying and pasting to Visual Studio, in the end of this article I will give a link to my Github Repository containing the Visual Studio solution.
 
 
-The scenario is, after compromising a host but dont have a good way to get a remote shell and can't rely on allowing firewall rules (may lack privileges to that), you can drop a Server.exe inside the machine disk and use trigger any persistence method (even user-level, like HKCU registry techniques) to spawn it on start, this way, you will have access to the machine just by connecting to it using the Client.exe!!
+The scenario is, after compromising a host but dont have a good way to get a remote shell and can't rely on allowing firewall rules (may lack privileges to that), you can drop a Server.exe inside the machine disk and use any persistence method (even user-level, like HKCU registry techniques) to spawn it when user logs in, this way, you will have access to the machine just by connecting to it using the Client.exe!!
 
 # Results
 
