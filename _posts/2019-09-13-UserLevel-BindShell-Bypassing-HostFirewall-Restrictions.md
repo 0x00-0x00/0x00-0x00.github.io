@@ -231,7 +231,7 @@ You can find the final code [here](https://github.com/0x00-0x00/NamedPipes) in m
 
 Compile both projects and test it yourself!
 
-Executing the Server.exe __DOES NOT__ triggers firewall pop-up because it will use SMB port which is enabled by default :)
+Executing the Server.exe __DOES NOT__ triggers firewall pop-up because it will use SMB port which is allowed by default :)
 
 ![Screenshot](/assets/BindShell-03.png)
 
