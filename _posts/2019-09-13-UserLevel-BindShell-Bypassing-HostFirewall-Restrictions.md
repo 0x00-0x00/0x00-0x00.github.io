@@ -36,7 +36,7 @@ As in MSDN website, named pipes are __"one-way or duplex pipe for communication 
 By default, there is no way to control a computer using named pipes, but we have many Windows API calls to aid us in this purpose like CreateNamedPipe, ConnectNamedPipe and so on.
 
 
-# Coding a named pipe bind shell with PowerShell
+# Coding a named pipe bind shell with PowerShell execution capabilities
 
 I have stumbled on a very useful repository owned by Tim MalcomVetter. If you still doesn't follow him on twitter then it is the time! Very useful red teaming tips over there.
 
