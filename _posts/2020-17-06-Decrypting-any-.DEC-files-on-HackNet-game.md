@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Decrypting any .DEC files on HackNet game"
-date:   2020-17-06 00:00:00 -0300
+date:   2020-06-17 00:00:00 -0300
 categories: games
 ---
 
